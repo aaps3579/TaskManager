@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.hp_pc.taskmanage.EditTask">
+
+    <TextView
+        android:id="@+id/title_tv_edit"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/name_tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_tv_edit"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="34dp"
+        android:text="Title" />
+
+    <EditText
+        android:id="@+id/name_et_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/name_tv_edit"
+        android:layout_alignLeft="@+id/desc_et_edit"
+        android:layout_alignStart="@+id/desc_et_edit" />
+
+    <TextView
+        android:id="@+id/desc_tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_tv_edit"
+        android:layout_alignStart="@+id/name_tv_edit"
+        android:layout_below="@+id/name_et_edit"
+        android:layout_marginTop="57dp"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/desc_et_edit"
+        android:layout_width="wrap_content"
+        android:hint="Description"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/desc_tv_edit"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/desc_tv_edit"
+        android:layout_toRightOf="@+id/desc_tv_edit"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/date_tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desc_tv_edit"
+        android:layout_alignStart="@+id/desc_tv_edit"
+        android:layout_below="@+id/desc_et_edit"
+        android:layout_marginTop="79dp"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/date_et_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desc_et_edit"
+        android:layout_alignStart="@+id/desc_et_edit"
+        android:layout_alignTop="@+id/date_tv_edit"
+        android:hint="DD/MM/YYYY"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/EditTask_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:id="@+id/time_tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date_tv_edit"
+        android:layout_alignStart="@+id/date_tv_edit"
+        android:layout_below="@+id/date_et_edit"
+        android:layout_marginTop="31dp"
+        android:text="Time" />
+
+    <EditText
+        android:id="@+id/time_et_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:layout_alignTop="@+id/time_tv_edit"
+        android:layout_alignLeft="@+id/date_et_edit"
+        android:layout_alignStart="@+id/date_et_edit"
+        android:hint="HH:MM(24-hour Format)"/>
+
+
+</RelativeLayout>

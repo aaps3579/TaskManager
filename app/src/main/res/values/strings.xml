@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TaskManage</string>
+    <string name="menuAddOption">Add Task</string>
+
+</resources>
